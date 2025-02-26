@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "color.hpp">
+#include "color.hpp"
 using namespace std;
 
 class BoardGame
