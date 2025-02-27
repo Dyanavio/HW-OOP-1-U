@@ -41,6 +41,12 @@ public:
 	{
 		this->price = price;
 	}
+	string getName() { return name; }
+	double getTime() { return time; }
+	int getPlayers() { return players; }
+	string getDeveloper() { return developer; }
+	double getPrice() { return price; }
+
 	void output()
 	{
 		cout << dye::aqua("Name: ") << name << endl;
