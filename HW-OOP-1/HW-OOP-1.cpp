@@ -79,7 +79,6 @@ int main()
 
 	game1.setTime(90);
 	game3.setDeveloper("Steve Jackson");
-	cout << '\n';
 
 	cout << dye::green("\n\n----- After -----") << endl;
 	game1.output();
