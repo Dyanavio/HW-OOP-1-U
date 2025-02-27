@@ -41,6 +41,7 @@ public:
 	{
 		this->price = price;
 	}
+
 	string getName() { return name; }
 	double getTime() { return time; }
 	int getPlayers() { return players; }
@@ -78,7 +79,7 @@ int main()
 
 	game1.setTime(90);
 	game3.setDeveloper("Steve Jackson");
-
+	cout << '\n';
 
 	cout << dye::green("\n\n----- After -----") << endl;
 	game1.output();
