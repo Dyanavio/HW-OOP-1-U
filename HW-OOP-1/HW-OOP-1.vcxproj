@@ -130,7 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="HW-OOP-1.cpp" />
+    <ClCompile Include="Hw.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="color.hpp" />
