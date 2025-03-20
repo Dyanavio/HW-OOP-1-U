@@ -167,6 +167,12 @@ void FillDoubleArray(int n, int m, int ** ptr)
 	}
 }
 
+ostream& operator<<(ostream& out, Matrice& M)
+{
+	out << M.toString();
+	return out;
+}
+
 
 int main()
 {
@@ -198,5 +204,7 @@ int main()
 	Matrice e = Matrice(n, m);
 	cout << dye::light_blue("Zero matrice: \n") << e.toString();
 	cout << "IsZero method: " << e.isZero() << endl;
+
+	cout << dye::light_aqua("\nOstream output of matrice: \n") << e << endl;
 
 }
