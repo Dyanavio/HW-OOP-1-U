@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HW-2.cpp" />
+    <ClInclude Include="..\HW-OOP-1\color.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\HW-OOP-1\color.hpp" />
+    <ClCompile Include="HW-2.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
