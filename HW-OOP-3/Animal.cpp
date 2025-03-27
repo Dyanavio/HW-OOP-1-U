@@ -25,7 +25,7 @@ Mammal::Mammal(std::string n, int a) : Animal(n, a)  // No such constructor inst
 
 void Mammal::makeSound() const
 {
-    if(!isSleeping) std::cout << "Mammal " + name + ": This is a generic mammal sound." << std::endl;
+    if(!isSleeping) std::cout << "Mammal " + name + ": This is a generic mammal sound." << std::endl; //Added isSleeping checks for all derived classes
     else std::cout << "Mammal" + name + " is currently fast asleep" << endl;;
 }
 
