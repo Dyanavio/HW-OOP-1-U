@@ -205,6 +205,6 @@ int main()
 	cout << dye::light_blue("Zero matrice: \n") << e.toString();
 	cout << "IsZero method: " << e.isZero() << endl;
 
-	cout << dye::light_aqua("\nOstream output of matrice: \n") << e << endl;
+	cout << dye::light_aqua("\nOstream output of matrice: \n") << b << endl;
 
 }
