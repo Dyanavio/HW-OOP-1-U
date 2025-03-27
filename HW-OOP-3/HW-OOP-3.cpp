@@ -54,12 +54,12 @@ int main() {
     }
 
     // Class Mammal does not have an instance of wagTail method and thus this method cannot be called through base class
+    // ! - Можно через dynamic cast, но Барбара Лисков где-то будет очень сильно ругаться
     // shouldn't wag tails, they are sleeping, but some of them do not wag tail at all
     /*for (int i = 0; i < 3; i++) 
     {
         is(arr[i] is )
         arr[i]->wagTail();
-        // ! - Можно через dynamic cast, но Барбара Лисков где-то будет очень сильно ругаться
     }*/
 
     // do they really need to sleep forever? :'( - Sadge
@@ -67,4 +67,5 @@ int main() {
     // Hah, that's stange :)
     //Tail t("Taily", 2);
     //t.makeSound(); - Tail is just a part of the dog and cannot exist on its own
+    // (Except for medical purposes)
 }
