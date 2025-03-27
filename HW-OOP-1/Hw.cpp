@@ -62,7 +62,7 @@ public:
 		delete[] ptr;
 		//cout << dye::red("Destructor is called") << endl;
 	}
-	bool isZero()
+	bool isZero() const
 	{
 		for (int i = 0; i < n; i++)
 		{
@@ -73,7 +73,7 @@ public:
 		}
 		return true;
 	}
-	double getNorm()
+	double getNorm() const
 	{
 		double sum = 0;
 		for (int i = 0; i < n; i++)
@@ -85,7 +85,7 @@ public:
 		}
 		return sqrt(sum);
 	}
-	Matrice add(const Matrice& a)
+	Matrice add(const Matrice& a) const
 	{
 		Matrice c = Matrice(n, m);
 		for (int i = 0; i < n; i++)
@@ -97,7 +97,7 @@ public:
 		}
 		return c;
 	}
-	string toString()
+	string toString() const
 	{
 		string str = "";
 		for (int i = 0; i < n; i++)
@@ -110,7 +110,7 @@ public:
 		}
 		return str;
 	}
-	const Matrice operator+(const Matrice& matrice)
+	const Matrice operator+(const Matrice& matrice) const
 	{
 		Matrice c = Matrice(n, m);
 		for (int i = 0; i < n; i++)
@@ -122,7 +122,7 @@ public:
 		}
 		return c;
 	}
-	const Matrice operator-(const Matrice& matrice)
+	const Matrice operator-(const Matrice& matrice) const
 	{
 		Matrice c = Matrice(n, m);
 		for (int i = 0; i < n; i++)
@@ -134,7 +134,7 @@ public:
 		}
 		return c;
 	}
-	const Matrice operator*(int a)
+	const Matrice operator*(int a) const
 	{
 		Matrice c = Matrice(n, m);
 		for (int i = 0; i < n; i++)
@@ -167,7 +167,7 @@ void FillDoubleArray(int n, int m, int ** ptr)
 	}
 }
 
-ostream& operator<<(ostream& out, Matrice& M)
+ostream& operator<<(ostream& out, Matrice& M) 
 {
 	out << M.toString();
 	return out;

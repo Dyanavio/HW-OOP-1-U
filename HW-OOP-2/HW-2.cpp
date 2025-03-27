@@ -21,11 +21,11 @@ public:
 		power = e.power;
 		type = e.type;
 	}
-	string getType()
+	string getType() const
 	{
 		return type;
 	}
-	double getPower()
+	double getPower() const
 	{
 		return power;
 	}
@@ -53,7 +53,7 @@ public:
 		engine = new Engine(*e);
 		maxSpeed = s;
 	}
-	virtual string getDescription()
+	virtual string getDescription() const
 	{
 		return "Vehicle with engine type: " + engine->getType();
 	}
@@ -70,7 +70,7 @@ public:
 	{
 		doors = d;
 	}
-	string getDescription() override
+	string getDescription() const override
 	{
 		return "Car (Engine: " + engine->getType() + " | Power: " + to_string(engine->getPower()) + " | Doors: " + to_string(doors) + ")";
 	}
