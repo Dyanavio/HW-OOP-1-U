@@ -4,7 +4,8 @@
 
 using namespace std;
 
-int main() {
+int main() 
+{
     Dog d("Fido", 3);
     Cat c("Fluffy", 5);
     Dog d1("Barky", 3);
@@ -53,7 +54,7 @@ int main() {
         arr[i]->eat();
     }
 
-    //Ну кот без хвоста, бывает
+    //Ну кот без хвоста, бывает (на самом деле не у всех Mammal есть хвост, поэтому так лучше не вызывать)
     // Class Mammal does not have an instance of wagTail method and thus this method cannot be called through base class
     // ! - Можно через dynamic cast, но Барбара Лисков где-то будет очень сильно ругаться
     // shouldn't wag tails, they are sleeping, but some of them do not wag tail at all
