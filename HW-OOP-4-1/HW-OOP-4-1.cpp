@@ -111,7 +111,6 @@ public:
 		{
 			cout << dye::red("Exception: " + string(e.what())) << endl;
 		}
-		
 	}
 	static friend ostream& operator<< (ostream& os, const Matrix& a)
 	{
